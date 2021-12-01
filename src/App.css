@@ -1,16 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 5px;
+}
+button {
+  padding: 5px;
+}
+.deleteBtn {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border: none;
+
+  transition: 0.2s linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.deleteBtn:hover {
+  transform: scale(0.9);
+}
+.nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar {
+  width: 100%;
+  background-color: purple;
+  color: yellow;
+  margin-bottom: 25px;
+}
+ul {
+  list-style: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.todoItem {
+  width: 200px;
+  background-color: skyblue;
+  color: yellow;
+  height: 20px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .App-header {
